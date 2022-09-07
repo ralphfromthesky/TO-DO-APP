@@ -71,7 +71,7 @@
         padding: 10px;
         display: flex;
         justify-content: space-between;
-        border: 3px solid white;
+        border: 3px solid rgb(242, 11, 11);
         border-radius: 10px;
 
     }
@@ -124,6 +124,18 @@
     #y {
         color: rgb(110, 107, 107);
     }
+    @media screen and (max-width: 600px) {
+        #y {
+            font-size: 4vh;
+
+        }
+        .button {
+            font-size: 3vh;
+        }
+        :placeholder-shown {
+            font-size: 3vh;
+        }
+    }
 </style>
 
 <body>
@@ -133,7 +145,7 @@
             <div class="input" id="input">
                 <form id="form">
                     <input type="text" name="" id="text" placeholder="Add to do List. . . . ." class="text">
-                    <button><i class='bx bx-plus-medical' id="y"></i></button>
+                    <button class="bots"><i class='bx bx-plus-medical' id="y"></i></button>
                 </form>
                 <div id="msg"></div>
             </div>
